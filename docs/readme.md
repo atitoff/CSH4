@@ -4,6 +4,6 @@
 
 ![](concept.svg)
 
-## Интерфейсы
+* [управление светом](light/readme.md)
 
-* [DALI](dali/readme.md)
+

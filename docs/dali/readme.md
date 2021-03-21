@@ -10,6 +10,10 @@
 
 ![](frame_timing.svg)
 
+### Принцип декодирования
+
+![](decoding.svg)
+
 ## Схема с опторазвязкой
 
 ![](opto_schematic.png)

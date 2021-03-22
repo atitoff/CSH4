@@ -5,5 +5,6 @@
 ![](concept.svg)
 
 * [управление светом](light/readme.md)
-
+* микропроцессорные модули
+  * [WT32-ETH01](boards/WT32-ETH01/readme.md)
 

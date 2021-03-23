@@ -12,4 +12,4 @@
 * Протоколы взаимодействия
   * [MQTT](protocols/MQTT.pdf)
 * [HomeAssistant](ha/readme.md)
-
+* [электропитание](power/readme.md)

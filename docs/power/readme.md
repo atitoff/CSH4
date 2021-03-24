@@ -10,11 +10,11 @@
 
 Лучше всего применить LiFePO4 аккумуляторы.
 
-|  | | 14s | 15s |
-| ---- | ---- | ---- | ---- |
-| Recovery Charging Voltage | Напряжение восстановления заряда | 47,6 | 51 |
-| Constant Charging Voltage | Постоянное напряжение зарядки (буферный режим) | 50,4 | 54 |
-| Low Voltage Disconnection | Отключение при низком напряжении | 39,2 | 42 |
-| Low Voltage Reconnection | Повторное подключение | 44,8 | 48 |
-| Load Over-Voltage Disconnection | Отключение от перенапряжения нагрузки | 51,8 | 55,5 |
-| Load Over-Voltage Re-connection | Повторное подключение перенапряжения нагрузки | 50,4 | 54 |
+|  | | 14s | 15s | на ячейку |
+| ---- | ---- | ---- | ---- | ---- |
+| Recovery Charging Voltage | Напряжение восстановления заряда | 47,6 | 51 | 3,4 |
+| Constant Charging Voltage | Постоянное напряжение зарядки (буферный режим) | 50,4 | 54 | 3,6 |
+| Low Voltage Disconnection | Отключение при низком напряжении | 39,2 | 42 | 2,8 |
+| Low Voltage Reconnection | Повторное подключение | 44,8 | 48 | 3,2 |
+| Load Over-Voltage Disconnection | Отключение от перенапряжения нагрузки | 51,8 | 55,5 | 3,7 |
+| Load Over-Voltage Re-connection | Повторное подключение перенапряжения нагрузки | 50,4 | 54 | 3,6 |

@@ -76,7 +76,15 @@ sudo systemctl enable hass
 http://ha:8123
 
 Скачать [Linux Debian 10 c Python 3.8.8](https://drive.google.com/file/d/1YNbDl3StzkifWjlsBz_FTdgOKYZsLp15/view?usp=sharing) (600M) для VMware  
+login: homeassistant
+password: bh0020
 
 
 ### Mosquitto
-https://github.com/home-assistant/addons/blob/master/mosquitto/DOCS.md
+
+```shell
+sudo apt-get install mosquitto
+mosquitto_passwd -b passwordfile mqtt
+```
+
+MqttBox - клиент для тестов

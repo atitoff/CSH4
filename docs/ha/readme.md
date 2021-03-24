@@ -75,4 +75,8 @@ sudo systemctl enable hass
 
 http://ha:8123
 
-Скачать [Linux Debian 10 c Python 3.8.8](https://drive.google.com/file/d/1G4rNH4cd4IR-3jY7mTdvTqqUvsps6MR3/view?usp=sharing) (513M) для VMware  
+Скачать [Linux Debian 10 c Python 3.8.8](https://drive.google.com/file/d/1YNbDl3StzkifWjlsBz_FTdgOKYZsLp15/view?usp=sharing) (600M) для VMware  
+
+
+### Mosquitto
+https://github.com/home-assistant/addons/blob/master/mosquitto/DOCS.md

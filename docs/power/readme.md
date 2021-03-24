@@ -13,7 +13,7 @@
 |  | | 14s | 15s |
 | ---- | ---- | ---- | ---- |
 | Recovery Charging Voltage | Напряжение восстановления заряда | 47,6 | 51 |
-| Constant Charging Voltage | Постоянное напряжение зарядки | 50,4 | 54 |
+| Constant Charging Voltage | Постоянное напряжение зарядки (буферный режим) | 50,4 | 54 |
 | Low Voltage Disconnection | Отключение при низком напряжении | 39,2 | 42 |
 | Low Voltage Reconnection | Повторное подключение | 44,8 | 48 |
 | Load Over-Voltage Disconnection | Отключение от перенапряжения нагрузки | 51,8 | 55,5 |

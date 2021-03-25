@@ -12,4 +12,5 @@
 * Протоколы взаимодействия
   * [MQTT](protocols/MQTT.pdf)
 * [HomeAssistant](ha/readme.md)
+* [Zigbee](zigbee/readme.md)
 * [электропитание](power/readme.md)

@@ -2,6 +2,8 @@
 
 Модуль на ESP32 с ethernet LAN8720A
 
+Может работать с [Micropython](../micropython/readme.md)
+
 ![](WT32-ETH01.1.png)
 
 Потребление 80 мА (0,27 Вт), потребление пиковое 500 мА (1,65 Вт).  

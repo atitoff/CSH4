@@ -2,16 +2,13 @@
 
 <details><summary>ESP32 + LAN8720 ethernet</summary>
 
-[github](https://github.com/emard/esp32lan8720)
 
 ```python
+import machine
 import network
-from machine import Pin
-lan = network.LAN(mdc=Pin(16), mdio=Pin(17), power=None, id=None, phy_addr=1, phy_type=network.PHY_LAN8720)
+lan = network.LAN(mdc = machine.Pin(23), mdio = machine.Pin(18), power= machine.Pin(16), phy_type = network.PHY_LAN8720, phy_addr=1, clock_mode=network.ETH_CLOCK_GPIO0_IN)
 lan.active(True)
 lan.config(dhcp_hostname="module1")
-# by default (no parameters), ifconfig() will request IP from DHCP
-lan.ifconfig()
 # set fixed IP (address, netmask, gateway, dns)
 # lan.ifconfig(('192.168.0.190', '255.255.255.0', '192.168.0.1', '192.168.0.1'))
 ```
@@ -23,6 +20,7 @@ lan.ifconfig()
 <details><summary>MicroPython Asynchronous MQTT</summary>
 
 [github](https://github.com/peterhinch/micropython-mqtt/tree/master/mqtt_as)
+
 
 ```python
 from mqtt_as import MQTTClient
@@ -61,6 +59,15 @@ try:
     asyncio.run(main(client))
 finally:
     client.close()  # Prevent LmacRxBlk:1 errors
+```
+
+</details>
+
+
+<details><summary>Send manchester code</summary>
+
+```python
+
 ```
 
 </details>

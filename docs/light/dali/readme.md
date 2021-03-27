@@ -14,7 +14,31 @@
 
 ![](decoding.svg)
 
+### Принцип кодирования
+
+Сначала преобразуем в манчестерский код, а потом сгенерируем последовательность для RMT.
+
+The RMT is ESP32-specific and allows generation of accurate digital pulses with 12.5ns resolution.
+
+Рассчитываем делитель
+
+![](tact_rmt.png)
+
+Генерим последовательность как в примере с декодированием 10110
+
+```python
+import esp32
+from machine import Pin
+
+r = esp32.RMT(0, pin=Pin(18), clock_div=256)
+# RMT(channel=0, pin=18, source_freq=80000000, clock_div=256)
+r.write_pulses((130, 260, 260, 130, 130, 260, 130), start=1) 
+# Send 1 for 416us, 0 for 832us, 1 for 832us, 0 for 416us, 1 for 416us, 0 for 832us, 1 for 416us
+```
+
+
 ## Команды DALI
+
 | #        | Command Code          | Repeat<br>< 100 ms | Answer<br>Slave | Command Name                          |  | 
 | -------- | --------------------- | ------------------ | --------------- | ------------------------------------- | ---- |
 | \-       | `YAAA AAA0 XXXX XXXX` |                    |                 | DIRECT ARC POWER CONTROL              | Установить яркость светильника с адресом 0AAA AAA или группы светильников с адресом 100A AAA <br>равной значению XXXX XXXX в течение FADE TIME |
@@ -82,10 +106,6 @@
 |  |  |  | yes   | query short address              |  
 |  |  |  |  | physical selection               |  
 |  |  |  |  | enable device type x             |  
-
-
-
-
 
 
 ## Схема с опторазвязкой

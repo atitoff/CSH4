@@ -17,7 +17,7 @@
 ## Команды DALI
 | #        | Command Code          | Repeat<br>< 100 ms | Answer<br>Slave | Command Name                          |  | 
 | -------- | --------------------- | ------------------ | --------------- | ------------------------------------- | ---- |
-| \-       | `YAAA AAA0 XXXX XXXX` |                    |                 | DIRECT ARC POWER CONTROL              | Установить яркость светильника с адресом 0AAA AAA или группы<br>светильников с адресом 100A AAA <br>равной значению XXXX XXXX в течение FADE TIME |
+| \-       | `YAAA AAA0 XXXX XXXX` |                    |                 | DIRECT ARC POWER CONTROL              | Установить яркость светильника с адресом 0AAA AAA или группы светильников с адресом 100A AAA <br>равной значению XXXX XXXX в течение FADE TIME |
 | 0        | `YAAA AAA1 0000 0000` |                    |                 | OFF                                   | Выключить светильник с адресом AAA AAA или группу светильников с адресом 100A AAA                                                                                                           |
 | 1        | `YAAA AAA1 0000 0001` |                    |                 | UP                                    | Увеличивать яркость светильника с адресом 0AAA AAA или группы<br>светильников с адресом 100A AAA в течение 200 мс со скоростью FADE RATE                                                    |
 | 2        | `YAAA AAA1 0000 0010` |                    |                 | DOWN                                  | Уменьшать яркость светильника с адресом 0AAA AAA или группы<br>светильников с адресом 100A AAA в течение 200 мс со скоростью FADE RATE                                                      |
@@ -54,7 +54,7 @@
 | 150      | `YAAA AAA1 1001 0110` |                    | yes             | QUERY MISSING SHORT ADDRESS           |                                                                                                                                                                                             |
 | 151      | `YAAA AAA1 1001 0111` |                    | yes             | QUERY VERSION NUMBER                  |                                                                                                                                                                                             |
 | 152      | `YAAA AAA1 1001 1000` |                    | yes             | QUERY CONTENT DTR                     |
-|  |  |  | yes   | query physical minimum level     |  
+|          |                       |                    | yes             | query physical minimum level          |  
 |  |  |  | yes   | query power failure              |  
 |  |  |  | yes   | query actual level               |  
 |  |  |  | yes   | query max level                  |  

@@ -17,18 +17,18 @@
 ## Команды DALI
 | #        | Command Code          | Repeat<br>< 100 ms | Answer<br>Slave | Command Name                          |  | 
 | -------- | --------------------- | ------------------ | --------------- | ------------------------------------- | ---- |
-| \-       | `YAAA AAA0 XXXX XXXX` | no                 |                 | DIRECT ARC POWER CONTROL              | Установить яркость светильника с адресом 0AAA AAA или группы<br>светильников с адресом 100A AAA или группы светильников<br>с адресом 100A AAA равной значению XXXX XXXX в течение FADE TIME |
-| 0        | `YAAA AAA1 0000 0000` | no                 |                 | OFF                                   | Выключить светильник с адресом AAA AAA или группу светильников с адресом 100A AAA                                                                                                           |
-| 1        | `YAAA AAA1 0000 0001` | no                 |                 | UP                                    | Увеличивать яркость светильника с адресом 0AAA AAA или группы<br>светильников с адресом 100A AAA в течение 200 мс со скоростью FADE RATE                                                    |
-| 2        | `YAAA AAA1 0000 0010` | no                 |                 | DOWN                                  | Уменьшать яркость светильника с адресом 0AAA AAA или группы<br>светильников с адресом 100A AAA в течение 200 мс со скоростью FADE RATE                                                      |
-| 3        | `YAAA AAA1 0000 0011` | no                 |                 | STEP UP                               | Увеличить яркость светильника с адресом 0AAA AAA или группы<br>светильников с адресом 100A AAA на один шаг                                                                                  |
-| 4        | `YAAA AAA1 0000 0100` | no                 |                 | STEP DOWN                             | Уменьшить яркость светильника с адресом 0AAA AAA<br>или группы светильников с адресом 100A AAA на один шаг                                                                                  |
-| 5        | `YAAA AAA1 0000 0101` | no                 |                 | RECALL MAX LEVEL                      | Установить яркость светильника с адресом 0AAA AAA или группы<br>светильников с адресом 100A AAA на уровень MAX\_LEVEL                                                                       |
-| 6        | `YAAA AAA1 0000 0110` | no                 |                 | RECALL MIN LEVEL                      | Установить яркость светильника с адресом 0AAA AAA или группы<br>светильников с адресом 100A AAA на уровень MIN\_LEVEL                                                                       |
-| 7        | `YAAA AAA1 0000 0111` | no                 |                 | STEP DOWN AND OFF                     | Уменьшить яркость светильника с адресом 0AAA AAA или группы<br>светильников с адресом 100A AAA на один шаг, если яркость на<br>уровне MIN\_LEVEL – выключить светильник                     |
-| 8        | `YAAA AAA1 0000 1000` | no                 |                 | ON AND STEP UP                        | Увеличить яркость светильника с адресом 0AAA AAA или группы<br>светильников с адресом 100A AAA на один шаг, если светильник<br>выключен – установить яркость на уровне MIN\_LEVEL           |
+| \-       | `YAAA AAA0 XXXX XXXX` |                    |                 | DIRECT ARC POWER CONTROL              | Установить яркость светильника с адресом 0AAA AAA или группы<br>светильников с адресом 100A AAA <br>равной значению XXXX XXXX в течение FADE TIME |
+| 0        | `YAAA AAA1 0000 0000` |                    |                 | OFF                                   | Выключить светильник с адресом AAA AAA или группу светильников с адресом 100A AAA                                                                                                           |
+| 1        | `YAAA AAA1 0000 0001` |                    |                 | UP                                    | Увеличивать яркость светильника с адресом 0AAA AAA или группы<br>светильников с адресом 100A AAA в течение 200 мс со скоростью FADE RATE                                                    |
+| 2        | `YAAA AAA1 0000 0010` |                    |                 | DOWN                                  | Уменьшать яркость светильника с адресом 0AAA AAA или группы<br>светильников с адресом 100A AAA в течение 200 мс со скоростью FADE RATE                                                      |
+| 3        | `YAAA AAA1 0000 0011` |                    |                 | STEP UP                               | Увеличить яркость светильника с адресом 0AAA AAA или группы<br>светильников с адресом 100A AAA на один шаг                                                                                  |
+| 4        | `YAAA AAA1 0000 0100` |                    |                 | STEP DOWN                             | Уменьшить яркость светильника с адресом 0AAA AAA<br>или группы светильников с адресом 100A AAA на один шаг                                                                                  |
+| 5        | `YAAA AAA1 0000 0101` |                    |                 | RECALL MAX LEVEL                      | Установить яркость светильника с адресом 0AAA AAA или группы<br>светильников с адресом 100A AAA на уровень MAX\_LEVEL                                                                       |
+| 6        | `YAAA AAA1 0000 0110` |                    |                 | RECALL MIN LEVEL                      | Установить яркость светильника с адресом 0AAA AAA или группы<br>светильников с адресом 100A AAA на уровень MIN\_LEVEL                                                                       |
+| 7        | `YAAA AAA1 0000 0111` |                    |                 | STEP DOWN AND OFF                     | Уменьшить яркость светильника с адресом 0AAA AAA или группы<br>светильников с адресом 100A AAA на один шаг, если яркость на<br>уровне MIN\_LEVEL – выключить светильник                     |
+| 8        | `YAAA AAA1 0000 1000` |                    |                 | ON AND STEP UP                        | Увеличить яркость светильника с адресом 0AAA AAA или группы<br>светильников с адресом 100A AAA на один шаг, если светильник<br>выключен – установить яркость на уровне MIN\_LEVEL           |
 | 9-15     | `YAAA AAA1 0000 1XXX` |                    |                 | RESERVED                              |                                                                                                                                                                                             |
-| 16-31    | `YAAA AAA1 0001 XXXX` | no                 |                 | GO TO SCENE                           | Светильнику с адресом 1AAA AAA или группе светильников с<br>адресом 100А ААА перейти к сцене XXXX                                                                                           |
+| 16-31    | `YAAA AAA1 0001 XXXX` |                    |                 | GO TO SCENE                           | Светильнику с адресом 1AAA AAA или группе светильников с<br>адресом 100А ААА перейти к сцене XXXX                                                                                           |
 | 32       | `YAAA AAA1 0010 0000` | yes                |                 | RESET                                 |                                                                                                                                                                                             |
 | 33       | `YAAA AAA1 0010 0001` | yes                |                 | STORE ACTUAL LEVEL IN THE DTR         |                                                                                                                                                                                             |
 | 34 - 41  | `YAAA AAA1 0010 XXXX` |                    |                 | RESERVED                              |                                                                                                                                                                                             |
@@ -54,32 +54,32 @@
 | 150      | `YAAA AAA1 1001 0110` |                    | yes             | QUERY MISSING SHORT ADDRESS           |                                                                                                                                                                                             |
 | 151      | `YAAA AAA1 1001 0111` |                    | yes             | QUERY VERSION NUMBER                  |                                                                                                                                                                                             |
 | 152      | `YAAA AAA1 1001 1000` |                    | yes             | QUERY CONTENT DTR                     |
-|  |  |  |  | query physical minimum level     |  
-|  |  |  |  | query power failure              |  
-|  |  |  |  | query actual level               |  
-|  |  |  |  | query max level                  |  
-|  |  |  |  | query min level                  |  
-|  |  |  |  | query power on level             |  
-|  |  |  |  | query system failure level       |  
-|  |  |  |  | query fade time / fade rate      |  
-|  |  |  |  | query scene level (scenes 0-15)  |  
-|  |  |  |  | query groups 0-7                 |  
-|  |  |  |  | query groups 8-15                |  
-|  |  |  |  | query random address (high)      |  
-|  |  |  |  | query random address (middle)    | 
-|  |  |  |  | query random address (low)       |  
-|  |  |  |  | terminate                        |  
+|  |  |  | yes   | query physical minimum level     |  
+|  |  |  | yes   | query power failure              |  
+|  |  |  | yes   | query actual level               |  
+|  |  |  | yes   | query max level                  |  
+|  |  |  | yes   | query min level                  |  
+|  |  |  | yes   | query power on level             |  
+|  |  |  | yes   | query system failure level       |  
+|  |  |  | yes   | query fade time / fade rate      |  
+|  |  |  | yes   | query scene level (scenes 0-15)  |  
+|  |  |  | yes   | query groups 0-7                 |  
+|  |  |  | yes   | query groups 8-15                |  
+|  |  |  | yes   | query random address (high)      |  
+|  |  |  | yes   | query random address (middle)    | 
+|  |  |  | yes   | query random address (low)       |  
+| 161  |  |  |  | terminate                        |  
 |  |  |  |  | set data transfer register (dtr) |  
 |  |  |  |  | initialise                       |  
 |  |  |  |  | randomise                        |  
-|  |  |  |  | compare                          |  
+|  |  |  | yes   | compare                          |  
 |  |  |  |  | withdraw                         |  
 |  |  |  |  | set search address (high)        |  
 |  |  |  |  | set search address (middle)      |  
 |  |  |  |  | set search address (low)         |  
 |  |  |  |  | program short address            |  
-|  |  |  |  | verify short address             |  
-|  |  |  |  | query short address              |  
+|  |  |  | yes   | verify short address             |  
+|  |  |  | yes   | query short address              |  
 |  |  |  |  | physical selection               |  
 |  |  |  |  | enable device type x             |  
 

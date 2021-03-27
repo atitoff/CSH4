@@ -45,15 +45,48 @@
 | 112 -127 | `YAAA AAA1 0111 XXXX` | yes                |                 | REMOVE FROM GROUP                     | Светильнику с адресом 1AAA AAA исключить себя из группы XXXX                                                                                                                                |
 | 128      | `YAAA AAA1 1000 0000` | yes                |                 | STORE DTR AS SHORT ADDRESS            | Светильнику с адресом 1AAA AAA установить себе значение из<br>регистра DTR в качестве нового короткого адреса                                                                               |
 | 129 -143 | `YAAA AAA1 1000 XXXX` |                    |                 | RESERVED                              |                                                                                                                                                                                             |
-| 144      | `YAAA AAA1 1001 0000` | no                 | yes             | QUERY STATUS                          |                                                                                                                                                                                             |
-| 145      | `YAAA AAA1 1001 0001` | no                 | yes             | QUERY BALLAST                         |                                                                                                                                                                                             |
-| 146      | `YAAA AAA1 1001 0010` | no                 | yes             | QUERY LAMP FAILURE                    |                                                                                                                                                                                             |
-| 147      | `YAAA AAA1 1001 0011` | no                 | yes             | QUERY LAMP POWER ON                   |                                                                                                                                                                                             |
-| 148      | `YAAA AAA1 1001 0100` | no                 | yes             | QUERY LIMIT ERROR                     |                                                                                                                                                                                             |
-| 149      | `YAAA AAA1 1001 0101` | no                 | yes             | QUERY RESET STATE                     |                                                                                                                                                                                             |
-| 150      | `YAAA AAA1 1001 0110` | no                 | yes             | QUERY MISSING SHORT ADDRESS           |                                                                                                                                                                                             |
-| 151      | `YAAA AAA1 1001 0111` | no                 | yes             | QUERY VERSION NUMBER                  |                                                                                                                                                                                             |
-| 152      | `YAAA AAA1 1001 1000` | no                 | yes             | QUERY CONTENT DTR                     |
+| 144      | `YAAA AAA1 1001 0000` |                    | yes             | QUERY STATUS                          |                                                                                                                                                                                             |
+| 145      | `YAAA AAA1 1001 0001` |                    | yes             | QUERY BALLAST                         |                                                                                                                                                                                             |
+| 146      | `YAAA AAA1 1001 0010` |                    | yes             | QUERY LAMP FAILURE                    |                                                                                                                                                                                             |
+| 147      | `YAAA AAA1 1001 0011` |                    | yes             | QUERY LAMP POWER ON                   |                                                                                                                                                                                             |
+| 148      | `YAAA AAA1 1001 0100` |                    | yes             | QUERY LIMIT ERROR                     |                                                                                                                                                                                             |
+| 149      | `YAAA AAA1 1001 0101` |                    | yes             | QUERY RESET STATE                     |                                                                                                                                                                                             |
+| 150      | `YAAA AAA1 1001 0110` |                    | yes             | QUERY MISSING SHORT ADDRESS           |                                                                                                                                                                                             |
+| 151      | `YAAA AAA1 1001 0111` |                    | yes             | QUERY VERSION NUMBER                  |                                                                                                                                                                                             |
+| 152      | `YAAA AAA1 1001 1000` |                    | yes             | QUERY CONTENT DTR                     |
+|  |  |  |  | query physical minimum level     |  
+|  |  |  |  | query power failure              |  
+|  |  |  |  | query actual level               |  
+|  |  |  |  | query max level                  |  
+|  |  |  |  | query min level                  |  
+|  |  |  |  | query power on level             |  
+|  |  |  |  | query system failure level       |  
+|  |  |  |  | query fade time / fade rate      |  
+|  |  |  |  | query scene level (scenes 0-15)  |  
+|  |  |  |  | query groups 0-7                 |  
+|  |  |  |  | query groups 8-15                |  
+|  |  |  |  | query random address (high)      |  
+|  |  |  |  | query random address (middle)    | 
+|  |  |  |  | query random address (low)       |  
+|  |  |  |  | terminate                        |  
+|  |  |  |  | set data transfer register (dtr) |  
+|  |  |  |  | initialise                       |  
+|  |  |  |  | randomise                        |  
+|  |  |  |  | compare                          |  
+|  |  |  |  | withdraw                         |  
+|  |  |  |  | set search address (high)        |  
+|  |  |  |  | set search address (middle)      |  
+|  |  |  |  | set search address (low)         |  
+|  |  |  |  | program short address            |  
+|  |  |  |  | verify short address             |  
+|  |  |  |  | query short address              |  
+|  |  |  |  | physical selection               |  
+|  |  |  |  | enable device type x             |  
+
+
+
+
+
 
 ## Схема с опторазвязкой
 

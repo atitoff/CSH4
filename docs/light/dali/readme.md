@@ -40,6 +40,23 @@ r.write_pulses((130, 260, 260, 130, 130, 260, 130), start=1)
 
 [см.](command.md)
 
+## Команды DALI MQTT
+
+`dali/ha/SET_LEVEL/32` Установить яркость светильника 32
+
+payload
+
+| byte |  |
+| ---- | ----|
+| 0 | level 0..255 |
+
+`dali/ha/SET_LEVEL_GRP/12` Установить яркость группы 12
+
+payload
+
+| byte |  |
+| ---- | ----|
+| 0 | level 0..255 |
 
 ## Схемы
 

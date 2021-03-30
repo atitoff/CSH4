@@ -83,8 +83,23 @@ password: bh0020
 ### Mosquitto
 
 ```shell
-sudo apt-get install mosquitto
-mosquitto_passwd -b passwordfile mqtt
+sudo apt install mosquitto mosquitto-clients
+sudo mosquitto_passwd -c /etc/mosquitto/passwd alex
+sudo nano /etc/mosquitto/conf.d/default.conf
 ```
+
+```
+allow_anonymous false
+password_file /etc/mosquitto/passwd
+
+# Plain MQTT protocol
+listener 1883
+
+
+listener 8083
+protocol websockets
+```
+
+`sudo systemctl restart mosquitto`
 
 MqttBox - клиент для тестов

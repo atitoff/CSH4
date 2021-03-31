@@ -17,17 +17,6 @@
 ![](decoding.svg)
 
 
-
-```python
-import esp32
-from machine import Pin
-
-r = esp32.RMT(0, pin=Pin(18), clock_div=256)
-# RMT(channel=0, pin=18, source_freq=80000000, clock_div=256)
-r.write_pulses((130, 260, 260, 130, 130, 260, 130), start=1) 
-# Send 1 for 416us, 0 for 832us, 1 for 832us, 0 for 416us, 1 for 416us, 0 for 832us, 1 for 416us
-```
-
 ## Команды DALI
 
 [см.](command.md)

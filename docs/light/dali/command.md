@@ -96,12 +96,12 @@ C: significant command bit |
 | 150      | `YAAA AAA1 1001 0110` |                    | yes             | QUERY MISSING SHORT ADDRESS           |                                                                                                                                                                                             |
 | 151      | `YAAA AAA1 1001 0111` |                    | yes             | QUERY VERSION NUMBER                  |                                                                                                                                                                                             |
 | 152      | `YAAA AAA1 1001 1000` |                    | yes             | QUERY CONTENT DTR                     |
-|          |                       |                    | yes             | query physical minimum level          |  
-|  |  |  | yes   | query power failure              |  
-|  |  |  | yes   | query actual level               |  
-|  |  |  | yes   | query max level                  |  
-|  |  |  | yes   | query min level                  |  
-|  |  |  | yes   | query power on level             |  
+| 154  0x9A         |                       |                    | yes             | query physical minimum level          |  
+|          |                       |                    | yes             | query power failure                   |  
+|          |                       |                    | yes             | query actual level                    |  
+|          |                       |                    | yes             | query max level                       |  
+|          |                       |                    | yes             | query min level                       |  
+|          |                       |                    | yes             | query power on level                  |  
 |  |  |  | yes   | query system failure level       |  
 |  |  |  | yes   | query fade time / fade rate      |  
 |  |  |  | yes   | query scene level (scenes 0-15)  |  

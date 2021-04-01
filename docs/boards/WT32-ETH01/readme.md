@@ -1,6 +1,6 @@
 # WT32-ETH01
 
-Модуль на ESP32 с ethernet LAN8720A
+Модуль на ESP32 с ethernet LAN8720A (datasheet [pdf](WT32-ETH01_datasheet_V1.1-%20en.pdf))
 
 Может работать с [Micropython](../micropython/readme.md)
 

@@ -23,15 +23,8 @@
 
 ## Команды DALI MQTT
 
-`dali/ha/SET_LEVEL/32` Установить яркость светильника 32
-
-payload
-
-| byte |  |
-| ---- | ----|
-| 0 | level 0..255 |
-
-`dali/ha/SET_LEVEL_GRP/12` Установить яркость группы 12
+`dali/ha/SET_LEVEL/32` **Установить яркость светильника** 32 | payload = 0..254
+`dali/ha/SET_LEVEL_GRP/12` **Установить яркость группы** 12 | payload = 0..254
 
 payload
 

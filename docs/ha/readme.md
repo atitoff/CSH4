@@ -79,6 +79,43 @@ http://ha:8123
 login: homeassistant
 password: bh0020
 
+### Install Home Assistant Container
+
+
+
+проверим название и версию Ubuntu
+
+```shell
+lsb_release -a
+No LSB modules are available.
+Distributor ID: Ubuntu
+Description:    Ubuntu 20.04.2 LTS
+Release:        20.04
+Codename:       focal
+```
+
+Установим Docker
+
+```shell
+sudo apt update
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=armhf] https://download.docker.com/linux/ubuntu eoan stable"
+sudo apt update
+sudo apt install docker-ce docker-ce-cli docker-compose
+
+# создадим директорию для конфигов
+mkdir /home/alex/ha_config
+
+sudo docker run --init -d \
+  --name homeassistant \
+  --restart=unless-stopped \
+  -v /etc/localtime:/etc/localtime:ro \
+  -v /home/alex/ha_config:/config \
+  --network=host \
+  homeassistant/home-assistant:stable
+```
+
 
 ### Mosquitto
 

@@ -44,7 +44,7 @@ class ReceiveFromDali:
             time.sleep_us(625)  # треть периода
             # читаем и добавляем
             val = cls.p0.value()
-            if val == 0 and cls.return_byte_cnt < 256:
+            if val == 0 and cls.return_byte_cnt <= 128:
                 cls.return_byte = cls.return_byte | cls.return_byte_cnt
             cls.return_byte_cnt = cls.return_byte_cnt << 1
             cls.not_react_f = False

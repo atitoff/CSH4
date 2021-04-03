@@ -14,3 +14,7 @@
 * [HomeAssistant](ha/readme.md)
 * [Zigbee](zigbee/readme.md)
 * [электропитание](power/readme.md)
+
+----
+
+[архив](old_smarthouse_html.7z) старой документации

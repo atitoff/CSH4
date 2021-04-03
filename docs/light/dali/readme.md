@@ -16,6 +16,19 @@
 
 ![](decoding.svg)
 
+<details>
+  <summary>Реализация Micropython</summary>
+
+```python
+from machine import Pin
+
+p0 = Pin(0, Pin.IN)
+p0.irq(trigger=Pin.IRQ_FALLING, handler=callback)
+
+
+```
+
+</details>
 
 ## Команды DALI
 

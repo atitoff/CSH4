@@ -52,6 +52,9 @@ class ReceiveFromDali:
     
     @classmethod
     async def receive(cls):
+        cls.not_react_f = False
+        cls.return_byte = 0
+        cls.return_byte_cnt = 1
         cls.p0.irq(trigger=Pin.IRQ_RISING, handler=cls.callback_start)
         await asyncio.sleep_ms(12)  # что бы не произошло выходим через 12 мс
         cls.p0.irq()

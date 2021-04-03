@@ -19,6 +19,8 @@
 <details>
   <summary>Реализация Micropython</summary>
 
+Для варианта с инверсией
+
 ```python
 from machine import Pin
 import time

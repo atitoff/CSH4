@@ -40,6 +40,7 @@ import network
 lan = network.LAN(mdc = machine.Pin(23), mdio = machine.Pin(18), power= machine.Pin(16), phy_type = network.PHY_LAN8720, phy_addr=1, clock_mode=network.ETH_CLOCK_GPIO0_IN)
 lan.active(True)
 lan.ifconfig(('192.168.1.34', '255.255.255.0', '192.168.1.1', '192.168.1.1'))
+#               ip                  mask        gateway         dns
 webrepl.start()
 ```
 

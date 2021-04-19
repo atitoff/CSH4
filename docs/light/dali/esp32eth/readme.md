@@ -1,6 +1,33 @@
 # Интерфейс DALI на базе ESP32ETH
 
-![Сопряжение CLion c Arduino](../clion_arduino/readme.md)
+[Сопряжение CLion c Arduino](../clion_arduino/readme.md)
+
+### Декодирование
+
+```c
+#include "esp32-hal.h"
+
+extern "C" void receive_data(uint32_t *data, size_t len, void * arg)
+{
+    parseRmt((rmt_data_t*) data, len, channels);
+}
+
+
+// Initialize the channel to capture up to 192 items
+if ((rmt_recv = rmtInit(21, false, RMT_MEM_192)) == NULL)
+{
+    Serial.println("init receiver failed\n");
+}
+
+// Setup 1us tick
+float realTick = rmtSetTick(rmt_recv, 1000);
+Serial.printf("real tick set to: %fns\n", realTick);
+
+// Ask to start reading
+rmtRead(rmt_recv, receive_data, NULL);
+
+```
+
 
 ### Принцип кодирования
 

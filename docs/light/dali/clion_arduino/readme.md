@@ -1,10 +1,10 @@
 # Сопряжение CLion c Arduino
 
 Устанавливаем [mingw](https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/installer/mingw-w64-install.exe/download).
-Ставим например в c:\tools\mingw-w64
+Ставим например в `c:\tools\mingw-w64`
 
 Устанавливаем Platformio. Качаем и запускаем скрипт [get-platformio.py](https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py).
-Установится в с:\users\UserХХХ\.platformio
+Установится в `с:\users\UserХХХ\.platformio`
 
 Устанавливаем плагины
 

@@ -2,42 +2,12 @@
 
 [Сопряжение CLion c Arduino](../clion_arduino/readme.md)
 
-### Декодирование
-
-```c
-#include "esp32-hal.h"
-
-extern "C" void receive_data(uint32_t *data, size_t len, void * arg)
-{
-    parseRmt((rmt_data_t*) data, len, channels);
-}
-
-
-// Initialize the channel to capture up to 192 items
-if ((rmt_recv = rmtInit(21, false, RMT_MEM_192)) == NULL)
-{
-    Serial.println("init receiver failed\n");
-}
-
-// Setup 1us tick
-float realTick = rmtSetTick(rmt_recv, 1000);
-Serial.printf("real tick set to: %fns\n", realTick);
-
-// Ask to start reading
-rmtRead(rmt_recv, receive_data, NULL);
-
-```
-
 
 ### Принцип кодирования
 
 Сначала преобразуем в манчестерский код, а потом сгенерируем последовательность для RMT.
 
 The RMT is ESP32-specific and allows generation of accurate digital pulses with 12.5ns resolution.
-
-Рассчитываем делитель
-
-![](tact_rmt.png)
 
 Генерим последовательность как в примере с декодированием 10110
 
@@ -56,13 +26,13 @@ r.write_pulses((269, 520, 520, 260, 260, 520, 260), start=1)
 
 Команда | MQTT | to ESP32 | from<br>ESP32 |
 |----|----|----|----|
-**Установить яркость светильника** 32 в 133 | dali/ha/set_level/32/130      | {01, 32, 133}
-**Установить яркость группы** 12 в 254      | dali/ha/set_level_grp/12/254  | {02, 12, 254}
-**Поиск существующих модулей**     | dali/ha/find/12/254  | {02, 12, 254}   | {00 or 01}
-**RAW** команды|
-**Команда с приемом**     | dali/ha/raw_r/addr/val  | {254, addr, val}
-**Команда без приема**    | dali/ha/raw/addr/val | {255, addr, val}
-**Ответ**    | dali/ha/raw_ret/val | {val}
+**Установить яркость светильника** 32 в 133     | dali/ha/set_level/32/130      | {01, 32, 133}
+**Установить яркость группы** 12 в 254          | dali/ha/set_level_grp/12/254  | {02, 12, 254}
+**Поиск существующих модулей**                  | dali/ha/find/12/254           | {02, 12, 254}     | {00 or 01}
+**RAW** команды |
+**Команда с приемом**                           | dali/ha/raw_r/addr/val        | {254, addr, val}  | {00 or 01}
+**Команда без приема**                          | dali/ha/raw/addr/val          | {255, addr, val}
+**Ответ**                                       | dali/ha/raw_ret/val           |                   | {00 or 01}
 
 
 

@@ -47,10 +47,25 @@ import esp32
 from machine import Pin
 
 r = esp32.RMT(0, pin=Pin(18), clock_div=256)
-# RMT(channel=0, pin=18, source_freq=80000000, clock_div=256)
-r.write_pulses((130, 260, 260, 130, 130, 260, 130), start=1) 
+# RMT(channel=0, pin=18, source_freq=80000000, clock_div=128)
+r.write_pulses((269, 520, 520, 260, 260, 520, 260), start=1) 
 # Send 1 for 416us, 0 for 832us, 1 for 832us, 0 for 416us, 1 for 416us, 0 for 832us, 1 for 416us
 ```
+
+## Команды MQTT
+
+Команда | MQTT | to ESP32
+|----|----|----|
+**Установить яркость светильника** 32 в 133 | dali/ha/set_level/32/130      | {01, 32, 133}
+**Установить яркость группы** 12 в 254      | dali/ha/set_level_grp/12/254  | {02, 12, 254}
+**Поиск существующих модулей**     | dali/ha/find/12/254  | {02, 12, 254}
+**RAW** |
+**Команда с приемом**     | dali/ha/raw_r/addr/val  | {254, addr, val}
+**Команда без приема**    | dali/ha/raw/addr/val | {255, addr, val}
+**Ответ**    | dali/ha/raw_ret/val | {val}
+
+
+
 
 ## Принципиальная схема
 

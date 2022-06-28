@@ -27,3 +27,8 @@ server: mqtt://localhost:1883
 user: mqtt
 password: mqtt
 ```
+serial:
+```
+port: tcp://IP шлюза:5000
+adapter: ezsp
+```

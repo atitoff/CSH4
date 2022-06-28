@@ -32,3 +32,27 @@ serial:
 port: tcp://IP шлюза:5000
 adapter: ezsp
 ```
+
+Запускаем аддон zigbee2mqtt и заглядываем в журнал. Там должно быть как ниже, где не будет никаких ошибок и должна открыться веб-страница zigbee2mqtt. Если есть ошибки, значит анализируем проблему, возможно неверно указали IP адрес шлюза или порт? или неправильно настроили доступ к MQTT или служба ser2net кем-то занята. Ser2net не может одновременно работать как с zigbee2mqtt и с ZHA. Если запущена интеграция ZHA и она смотрит на ser2net, значит интеграцию ZHA нужно деактивировать, тогда вы сможете запустить аддон zigbee2mqtt
+```
+[s6-init] making user provided files available at /var/run/s6/etc...exited 0.
+[s6-init] ensuring user provided files have correct perms...exited 0.
+[fix-attrs.d] applying ownership & permissions fixes...
+[fix-attrs.d] done.
+[cont-init.d] executing container initialization scripts...
+[cont-init.d] socat.sh: executing... 
+[18:57:10] INFO: Socat not enabled, marking service as down
+[cont-init.d] socat.sh: exited 0.
+[cont-init.d] zigbee2mqtt.sh: executing... 
+[18:57:10] INFO: MQTT available, fetching server detail ...
+[18:57:10] INFO: Previous config file found, checking backup
+[18:57:10] INFO: Creating backup config in '/config/zigbee2mqtt/.configuration.yaml.bk'
+[18:57:10] INFO: Adjusting Zigbee2mqtt core yaml config with add-on quirks ...
+[cont-init.d] zigbee2mqtt.sh: exited 0.
+[cont-init.d] done.
+[services.d] starting services
+[services.d] done.
+[18:57:11] INFO: Handing over control to Zigbee2mqtt Core ...
+> zigbee2mqtt@1.23.0 start
+> node index.js
+```

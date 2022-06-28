@@ -23,13 +23,13 @@ Click on the addon and press Install and wait till the addon is installed.
 Click on Configuration
 If you are not using the Mosquitto broker addon fill in your MQTT details (leave empty when using the Mosquitto broker addon). Format can be found here, but skip the initial mqtt: indent. e.g.:
 ```
-server: mqtt://localhost:1883
+server: mqtt://192.168.1.46:1883
 user: mqtt
 password: mqtt
 ```
 serial:
 ```
-port: tcp://IP шлюза:5000
+port: tcp://192.168.1.45:5000
 adapter: ezsp
 ```
 

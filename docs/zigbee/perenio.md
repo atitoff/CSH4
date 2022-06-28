@@ -8,6 +8,7 @@ If you don't have a MQTT broker yet; in Home Assistant go to Settings → Add-on
 
 Go back to the Add-on store, click ⋮ → Repositories, fill in
 https://github.com/zigbee2mqtt/hassio-zigbee2mqtt and click Add → Close.
+
 ![image](https://user-images.githubusercontent.com/13304485/176131678-ee979698-b83c-4fdb-9568-1a95301e583a.png)
 
 ![image](https://user-images.githubusercontent.com/13304485/176135448-3c615c75-3151-48ab-a325-9bf0208731e4.png)
@@ -21,6 +22,8 @@ Click on the addon and press Install and wait till the addon is installed.
 
 Click on Configuration
 If you are not using the Mosquitto broker addon fill in your MQTT details (leave empty when using the Mosquitto broker addon). Format can be found here, but skip the initial mqtt: indent. e.g.:
+```
 server: mqtt://localhost:1883
-user: my_user
-password: my_password
+user: mqtt
+password: mqtt
+```

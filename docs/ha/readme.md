@@ -164,7 +164,27 @@ id
 
 Проверяем коннект к KVM серверу
 ```
-Please note that you need to use the following command to connect to KVM server:
 virsh --connect qemu:///system
 virsh --connect qemu:///system list --all
 ```
+
+X11 серверная часть
+```
+sudo apt-get install xorg openbox
+```
+
+Устанавливаем на windows Xming server, запускаем
+
+Далее в PuTTY
+
+![image](https://user-images.githubusercontent.com/13304485/176812289-9811ce94-f167-4565-94e0-64438bd94efd.png)
+
+Коннектимся из PuTTY и запускаем:
+```
+virt-manager
+```
+
+Появляется GUI
+
+![image](https://user-images.githubusercontent.com/13304485/176812647-634cd70b-97fc-46b4-9c4f-f467c39cef96.png)
+

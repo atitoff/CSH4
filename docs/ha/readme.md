@@ -188,3 +188,39 @@ virt-manager
 
 ![image](https://user-images.githubusercontent.com/13304485/176812647-634cd70b-97fc-46b4-9c4f-f467c39cef96.png)
 
+
+### Настраиваем мост
+``` sudo nano /etc/network/interfaces```
+
+```
+source /etc/network/interfaces.d/*
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# The primary network interface
+auto ens32
+iface ens32 inet manual
+
+## static ip config file for br0 ##
+#set up bridge and give it a static ip
+
+auto br0
+iface br0 inet static
+    address 192.168.1.23
+    netmask 255.255.255.0
+    network 192.168.1.0
+    broadcast 192.168.1.255
+    gateway 192.168.1.1
+    bridge_ports ens32
+    bridge_stp off
+    bridge_fd 0
+    bridge_maxwait 0
+    dns-nameservers 192.168.1.1
+
+#allow autoconf for ipv6
+
+iface br0 inet6 auto
+        accept_ra 1
+```

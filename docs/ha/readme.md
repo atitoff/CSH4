@@ -140,3 +140,31 @@ protocol websockets
 `sudo systemctl restart mosquitto`
 
 MqttBox - клиент для тестов
+
+## Виртуальная машина KVM
+
+На базе Debian 11
+
+```
+sudo apt install qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils libguestfs-tools genisoimage virtinst libosinfo-bin
+```
+
+Добавляем пользователя в группы
+```
+sudo adduser alex libvirt
+sudo adduser alex libvirt-qemu
+```
+
+Перегружаем и проверяем наличие пользователя в группах
+```
+newgrp libvirt
+newgrp libvirt-qemu
+id
+```
+
+Проверяем коннект к KVM серверу
+```
+Please note that you need to use the following command to connect to KVM server:
+virsh --connect qemu:///system
+virsh --connect qemu:///system list --all
+```

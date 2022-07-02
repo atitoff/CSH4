@@ -227,7 +227,8 @@ iface br0 inet6 auto
 
 ### Создаем виртуалку
 
+```
 mkdir -vp ~/images/hassos-vm && cd ~/images/hassos-vm
 wget https://github.com/home-assistant/operating-system/releases/download/8.2/haos_ova-8.2.qcow2.xz
 virsh pool-create-as --name hassos --type dir --target ~/images/hassos-vm
-
+```

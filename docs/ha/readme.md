@@ -90,11 +90,10 @@ iface br0 inet dhcp
 mkdir -vp ~/images/hassos-vm && cd ~/images/hassos-vm
 wget https://github.com/home-assistant/operating-system/releases/download/8.2/haos_ova-8.2.qcow2.xz
 virsh pool-create-as --name hassos --type dir --target ~/images/hassos-vm
+xz -d -v haos_ova-8.2.qcow2.xz
 ```
 
-xz -d -v haos_ova-8.2.qcow2.xz
-Assuming you’ve used the same names for VM (hassos), the qcow image (haos_ova-6.6.qcow2), and the bridge (br0) as in this guide:
-
+```
 sudo virt-install --import --name hassos \
 --memory 2048 --vcpus 2 --cpu host \
 --disk haos_ova-8.2.qcow2,format=qcow2,bus=virtio \
@@ -102,3 +101,4 @@ sudo virt-install --import --name hassos \
 --graphics none \
 --noautoconsole \
 --boot uefi
+```

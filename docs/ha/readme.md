@@ -109,4 +109,4 @@ sudo virt-install --import --name hassos \
 
 ![image](https://user-images.githubusercontent.com/13304485/177000951-747ee874-5a4e-418b-bd9e-30f4e7bce87b.png)
 
-
+apk add qemu-guest-agent

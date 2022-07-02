@@ -186,7 +186,7 @@ virt-manager
 
 Появляется GUI
 
-![image](https://user-images.githubusercontent.com/13304485/176812647-634cd70b-97fc-46b4-9c4f-f467c39cef96.png)
+![image](https://user-images.githubusercontent.com/13304485/176993391-0b46efa3-5be6-4ada-bce8-3ef5a3a53f81.png)
 
 
 ### Настраиваем мост

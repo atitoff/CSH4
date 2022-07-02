@@ -188,6 +188,18 @@ virt-manager
 
 ![image](https://user-images.githubusercontent.com/13304485/176993391-0b46efa3-5be6-4ada-bce8-3ef5a3a53f81.png)
 
+### Make Network active and auto-restart
+
+```
+sudo virsh net-list --all
+ Имя       Состояние    Автозапуск   Постоянный
+-------------------------------------------------
+ default   не активен   no           yes
+
+
+sudo virsh net-start default
+sudo virsh net-autostart default
+```
 
 ### Настраиваем мост
 ``` sudo nano /etc/network/interfaces```

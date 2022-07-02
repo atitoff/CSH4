@@ -102,3 +102,10 @@ sudo virt-install --import --name hassos \
 --noautoconsole \
 --boot uefi
 ```
+
+### SSH
+
+![image](https://user-images.githubusercontent.com/13304485/177000877-e9fe1d8e-0dda-431d-9ab2-ed1e745d6af6.png)
+
+![image](https://user-images.githubusercontent.com/13304485/177000923-ce5919fe-be45-4f6a-b210-7f23e6de1d17.png)
+

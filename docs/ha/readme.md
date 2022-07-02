@@ -103,6 +103,14 @@ sudo virt-install --import --name hassos \
 --boot uefi
 ```
 
+## Cockpit
+This installs  that can be accessed via hostIP:9090 and installs the virtual machine manager.
+```
+ sudo apt-get install cockpit
+ sudo apt-get install cockpit-machines
+ sudo apt-get install virt-viewer
+```
+
 ### SSH
 
 ![image](https://user-images.githubusercontent.com/13304485/177000877-e9fe1d8e-0dda-431d-9ab2-ed1e745d6af6.png)

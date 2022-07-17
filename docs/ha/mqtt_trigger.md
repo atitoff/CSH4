@@ -69,7 +69,7 @@ automation:
 
 ![](mqtt_trigger2.png)
 
-```json
+```python
 {
     'platform': 'mqtt',
     'topic': 'sensor/temperature',

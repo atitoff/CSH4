@@ -18,17 +18,15 @@ Menu -> Run -> Edit Configuration
 
 ![img_4.png](img_4.png)
 
-
-
+Распаковываем, например, в `D:\Alex\dev\STM32CubeIDE`
+[архив](plugins.7z)
 
 Удаляем все конфигурации и создаем
 
 ![img_5.png](img_5.png)
 
 
-
-![img_6.png](img_6.png)
-
+![img_7.png](img_7.png)
 
 
 GDB Server:

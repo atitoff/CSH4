@@ -22,6 +22,8 @@ MQTT -> GPIO
 
 ## Структура программы
 
+[**Работаем с CLion**](clion/clion.md)
+
 ![](program.svg)
 
 

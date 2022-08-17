@@ -77,3 +77,7 @@ class ReceiveFromDali:
 
 Q2 - 600mA, 40V, hfe 100..300  
 U1, U2 - TLP183
+
+### Питание
+
+![](power.png)

@@ -59,8 +59,6 @@ class ReceiveFromDali:
         await asyncio.sleep_ms(12)  # что бы не произошло выходим через 12 мс
         cls.p0.irq()
         return cls.return_byte
-
-
 ```
 
 </details>

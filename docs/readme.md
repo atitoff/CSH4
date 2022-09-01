@@ -7,7 +7,7 @@
 * управление светом
   * [драйверы](light/drivers/drivers.md)
   * [DALI](light/dali/readme.md)
-  * [GPIO-Ethernet](light/gpio/gpio-ethernet.md)
+  * [MQTT-GPIO](light/gpio/mqtt-gpio.md) модуль
 * микропроцессорные модули
   * [WT32-ETH01](boards/WT32-ETH01/readme.md)
 * Протоколы взаимодействия

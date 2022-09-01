@@ -49,7 +49,9 @@ MQTT -> GPIO
 | 02 00 25 00 | нажали кнопку на порту 25 модуля 2 (00..31) |
 
 <details><summary>Подробнее</summary>
+
 ![](mqtt_messages_event.svg)
+
 </details>
 
 

@@ -52,6 +52,8 @@ https://www.cdebyte.com/products/NT1-B
 > (00..31) - номер порта  
 > 00 - значение  
 
+![](mqtt_messages_receive.svg)
+
 ### GPIO -> MQTT
 
 #### PUSH

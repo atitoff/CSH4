@@ -52,7 +52,11 @@ https://www.cdebyte.com/products/NT1-B
 > (00..31) - номер порта  
 > 00 - значение  
 
+<details><summary>Подробнее</summary>
+
 ![](mqtt_messages_receive.svg)
+
+</details>
 
 ### GPIO -> MQTT
 

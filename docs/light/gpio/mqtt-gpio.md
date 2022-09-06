@@ -101,7 +101,6 @@ https://www.cdebyte.com/products/NT1-B
     "type": "button",
     "active_level": 0,
     "long_press": 0,
-    "counter": 0              // если больше 0, то счетчик, выдающий сообщение каждые "counter" тиков
   },
   "1": {
     "type": "output",
@@ -113,6 +112,11 @@ https://www.cdebyte.com/products/NT1-B
   },
   "3": {
     "type": "led_button_led"
+  },
+  "4": {
+    "type": "counter",
+    "active_level": 0,
+    "tick": 1000
   }
 }
 ```

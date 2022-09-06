@@ -91,6 +91,35 @@ https://www.cdebyte.com/products/NT1-B
 
 `GPIO/2/DALI/RAW_RET/`
 
+## Хранение информации о портах и их последующая компиляция
+
+<details><summary>Подробнее</summary>
+
+```json
+{
+  "0": {
+    "type": "button",
+    "active_level": 0,
+    "long_press": 0,
+    "counter": 0              // если больше 0, то счетчик, выдающий сообщение каждые "counter" тиков
+  },
+  "1": {
+    "type": "output",
+    "active_level": 0
+  },
+  "2": {
+    "type": "led_button",
+    "active_level": 0
+  },
+  "3": {
+    "type": "led_button_led"
+  }
+}
+```
+
+</details>
+
+
 ## Модульная система
 
 Модули могут работать как одиночно, в этом случае они подключаются по Ethernet, так и связываться по шине CAN, если в данном месте модулей нужно более одного.

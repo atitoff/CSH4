@@ -95,6 +95,31 @@ https://www.cdebyte.com/products/NT1-B
 
 <details><summary>Подробнее</summary>
 
+```yaml
+0: ["button", "output", "led_button_led"]             # PB15
+1: ["button", "output", "led_button"]                 # PB14
+2: # PB12
+3: # PB10
+4: # PB1
+5: # PB0
+6: # PB13
+7: # PB11
+8: # PB2
+9: # PA7
+10: # PA6
+11: # PB8
+12: # PB7
+13: # PB4
+14: # PA5
+15: # PB9
+16: # PB6
+17: # PB3
+18: # PA15
+19: # PC14
+20: # PA3
+21: # PA2
+```
+
 ```json
 {
   "0": {

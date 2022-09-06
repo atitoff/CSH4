@@ -9,8 +9,9 @@ https://www.cdebyte.com/products/NT1-B
 ![](gpio1.svg)
 
 ## Первоначальная настройка модуля NT1-B
+
 <details><summary>Настройка модуля</summary>
-  
+
 Первоначально модуль сидит на статическом адресе 192.168.3.3
 настраиваем сеть компа и заходим
 
@@ -25,7 +26,6 @@ https://www.cdebyte.com/products/NT1-B
 ![](mac-domain.png)
 
 </details>
-
 
 ## Команды
 
@@ -51,7 +51,7 @@ https://www.cdebyte.com/products/NT1-B
 > 00 - подмодуль  
 > 00 - команда SET  
 > (00..31) - номер порта  
-> 00 - значение  
+> 00 - значение
 
 <details><summary>Подробнее</summary>
 
@@ -70,7 +70,7 @@ https://www.cdebyte.com/products/NT1-B
 > 00 - подмодуль  
 > 00 - команда PUSH  
 > 25 - номер порта  
-> 00 - значение (в данном случае не используется)  
+> 00 - значение (в данном случае не используется)
 
 `GPIO/2/0/PUSH/25`
 
@@ -84,7 +84,6 @@ https://www.cdebyte.com/products/NT1-B
 
 Ответ, поступивший по шине DALI
 
-
 | команда (STM32 -> UART) | событие      | описание           |
 |-------------------------|--------------|--------------------|
 | 00 **_03_** byte1       | DALI/RAW_RET | ответ от шины DALI |
@@ -96,28 +95,28 @@ https://www.cdebyte.com/products/NT1-B
 <details><summary>Подробнее</summary>
 
 ```yaml
-0: ["button", "output", "led_button_led"]             # PB15
-1: ["button", "output", "led_button"]                 # PB14
-2: # PB12
-3: # PB10
-4: # PB1
-5: # PB0
-6: # PB13
-7: # PB11
-8: # PB2
-9: # PA7
-10: # PA6
-11: # PB8
-12: # PB7
-13: # PB4
-14: # PA5
-15: # PB9
-16: # PB6
-17: # PB3
-18: # PA15
-19: # PC14
-20: # PA3
-21: # PA2
+0: [ "button", "output", "led_button_led" ]             # PB15
+1: [ "button", "output", "led_button" ]                 # PB14
+2: [ "button", "output", "led_button_led" ]             # PB12
+3: [ "button", "output", "led_button" ]                 # PB10
+4: [ "button", "output", "led_button_led", "tim3_ch4" ]             # PB1
+5: [ "button", "output", "led_button", "tim3_ch3" ]                 # PB0
+6: [ "button", "output", "led_button_led" ]             # PB13
+7: [ "button", "output", "led_button" ]                 # PB11
+8: [ "button", "output", "led_button_led" ]             # PB2
+9: [ "button", "output", "led_button" , "tim3_ch2" ]    # PA7
+10: [ "button", "output", "led_button_led", "tim3_ch1" ]            # PA6
+11: [ "button", "output", "led_button" ]                # PB8
+12: [ "button", "output", "led_button_led" ]            # PB7
+13: [ "button", "output", "led_button" ]                # PB4
+14: [ "button", "output", "led_button_led" ]            # PA5
+15: [ "button", "output", "led_button" ]                # PB9
+16: [ "button", "output", "led_button_led" ]            # PB6
+17: [ "button", "output", "led_button" ]                # PB3
+18: [ "button", "output", "led_button_led" ]            # PA15
+19: [ "button", "output", "led_button" ]                # PC14
+20: [ "button", "output", "led_button_led" ]            # PA3
+21: [ "button", "output", "led_button" ]                # PA2
 ```
 
 ```json
@@ -125,7 +124,7 @@ https://www.cdebyte.com/products/NT1-B
   "0": {
     "type": "button",
     "active_level": 0,
-    "long_press": 0,
+    "long_press": 0
   },
   "1": {
     "type": "output",
@@ -148,10 +147,10 @@ https://www.cdebyte.com/products/NT1-B
 
 </details>
 
-
 ## Модульная система
 
-Модули могут работать как одиночно, в этом случае они подключаются по Ethernet, так и связываться по шине CAN, если в данном месте модулей нужно более одного.
+Модули могут работать как одиночно, в этом случае они подключаются по Ethernet, так и связываться по шине CAN, если в
+данном месте модулей нужно более одного.
 
 ![](can_modules.svg)
 

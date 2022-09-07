@@ -1,9 +1,11 @@
 # Прошивка
 
 
+## com2com петля последовательных портов
+
 ### Реестр com0com
 
-<details><summary></summary>
+<details><summary>Подробнее</summary>
 
 ![](reg_com0com.png)
 

@@ -92,6 +92,8 @@ https://www.cdebyte.com/products/NT1-B
 
 ## Хранение информации о портах и их последующая компиляция
 
+[прошивка программы](write_fw/readme.md)
+
 <details><summary>Подробнее</summary>
 
 ```yaml
@@ -147,9 +149,7 @@ https://www.cdebyte.com/products/NT1-B
 
 </details>
 
-### Прошивка
 
-![](reg_com0com.png)
 
 Просмотр портов в реестре. Программа `com0com` нужна для того чтобы сделать петлю.
 

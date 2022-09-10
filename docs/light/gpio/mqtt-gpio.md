@@ -82,7 +82,7 @@ https://www.cdebyte.com/products/NT1-B
 
 #### DALI RAW
 
-Описание [DALI](dali/readme.md)
+> **Описание [DALI](dali/readme.md)**
 
 Ответ, поступивший по шине DALI
 

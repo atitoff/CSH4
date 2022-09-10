@@ -166,3 +166,10 @@ https://www.cdebyte.com/products/NT1-B
 ## Распайка компонентов портов
 
 [см.](gpio_pic/readme.md)
+
+## Реализация на stm32qubeMX
+
+[stm32qubeMX](stm32qube/readme.md)
+
+### Uart1
+

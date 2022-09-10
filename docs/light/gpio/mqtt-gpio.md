@@ -171,5 +171,3 @@ https://www.cdebyte.com/products/NT1-B
 
 [stm32qubeMX](stm32qube/readme.md)
 
-### Uart1
-

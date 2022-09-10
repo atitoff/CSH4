@@ -82,6 +82,8 @@ https://www.cdebyte.com/products/NT1-B
 
 #### DALI RAW
 
+Описание [DALI](dali/readme.md)
+
 Ответ, поступивший по шине DALI
 
 | команда (STM32 -> UART) | событие      | описание           |

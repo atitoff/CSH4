@@ -1,7 +1,5 @@
 # MQTT-GPIO
 
-<img align="left"  src="img_1.png">
-
 <img align="left"  src="nt_pad.png">
 
 

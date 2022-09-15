@@ -9,7 +9,7 @@
 ```c
 uint8_t UART1_rxBuffer[4] = {0};
 
-main {
+int main(void) {
     // ...
     HAL_UART_Receive_DMA(&huart1, UART1_rxBuffer, 4);
     // ...

@@ -54,6 +54,8 @@ https://www.cdebyte.com/products/NT1-B
 
 <details><summary>Подробнее</summary>
 
+![](message_convert.svg)
+
 ![](mqtt_messages_receive.svg)
 
 </details>
@@ -90,6 +92,8 @@ https://www.cdebyte.com/products/NT1-B
 | 00 **_03_** byte1       | DALI/RAW_RET | ответ от шины DALI |
 
 `GPIO/2/DALI/RAW_RET/`
+
+
 
 ## Хранение информации о портах и их последующая компиляция
 

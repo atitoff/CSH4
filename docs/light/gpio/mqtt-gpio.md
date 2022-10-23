@@ -97,7 +97,7 @@ https://www.cdebyte.com/products/NT1-B
 
 ## Хранение информации о портах и их последующая компиляция
 
-[прошивка программы](write_fw/readme.md)
+[Прошивка программы](write_fw/readme.md)
 
 <details><summary>Подробнее</summary>
 

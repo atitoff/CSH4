@@ -3,6 +3,7 @@
 ## GPIO
 
 ```c
+// нет портов
 static void MX_GPIO_Init(void)
 {
 /* USER CODE BEGIN MX_GPIO_Init_1 */
@@ -16,6 +17,7 @@ static void MX_GPIO_Init(void)
 }
 
 
+// один порт
 static void MX_GPIO_Init(void)
 {
   GPIO_InitTypeDef GPIO_InitStruct = {0};
@@ -41,6 +43,7 @@ static void MX_GPIO_Init(void)
 }
 
 
+// два порта
 static void MX_GPIO_Init(void)
 {
   GPIO_InitTypeDef GPIO_InitStruct = {0};

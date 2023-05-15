@@ -112,6 +112,17 @@ This installs  that can be accessed via hostIP:9090 and installs the virtual mac
 ```
 
 ### SSH
+Пробрасываем временно снаружи 80 порт
+Устанавливаем Let's Encrypt
+Правим конфиг
+```yaml
+http:
+  base_url: https://asasl.duckdns.org:8123
+  ssl_certificate: /ssl/fullchain.pem
+  ssl_key: /ssl/privkey.pem
+```
+
+
 
 ![image](https://user-images.githubusercontent.com/13304485/177000877-e9fe1d8e-0dda-431d-9ab2-ed1e745d6af6.png)
 

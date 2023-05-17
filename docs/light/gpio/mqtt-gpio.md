@@ -28,6 +28,7 @@ https://www.cdebyte.com/products/NT1-B
 
 ## Прямые команды
 
+Передаются в строковом виде ASCII
 
 ![direct_command.svg](direct_command.svg)
 

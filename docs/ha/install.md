@@ -87,14 +87,23 @@ iface br0 inet dhcp
 #### Через nmcli
 
 `sudo nmcli con show`
+
 Then, add a new bridge called br0:
+
 `sudo nmcli con add ifname br0 type bridge con-name br0`
+
 Create a slave interface for br0 using eth0 NIC:
+
 `sudo nmcli con add type bridge-slave ifname eth0 master br0`
+
 Turn on br0 interface to get an IP via DHCP:
+
 `sudo nmcli con up br0`
+
 `sudo nmcli connection delete 'Wired connection 1'`
+
 `sudo nmcli con show`
+
 ```
 NAME                UUID                                  TYPE      DEVICE 
 br0                 0877cdc2-4f10-4cdc-ac8d-fd4ed9d152e4  bridge    br0    

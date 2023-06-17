@@ -5,7 +5,7 @@
 На базе Debian 11
 
 ```
-sudo apt install qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils libguestfs-tools genisoimage virtinst libosinfo-bin virt-manager
+sudo apt install qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils libguestfs-tools genisoimage virtinst libosinfo-bin virt-manager qemu-efi
 ```
 
 Добавляем пользователя в группы

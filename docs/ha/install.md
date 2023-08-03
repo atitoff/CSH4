@@ -5,7 +5,7 @@
 На базе Debian 11
 
 ```
-sudo apt install qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils libguestfs-tools genisoimage virtinst libosinfo-bin virt-manager
+sudo apt install qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils libguestfs-tools genisoimage virtinst libosinfo-bin virt-manager qemu-efi
 ```
 
 Добавляем пользователя в группы
@@ -82,6 +82,33 @@ auto br0
 iface br0 inet dhcp
    bridge_ports ens32
 
+```
+
+#### Через nmcli
+
+`sudo nmcli con show`
+
+Then, add a new bridge called br0:
+
+`sudo nmcli con add ifname br0 type bridge con-name br0`
+
+Create a slave interface for br0 using eth0 NIC:
+
+`sudo nmcli con add type bridge-slave ifname eth0 master br0`
+
+Turn on br0 interface to get an IP via DHCP:
+
+`sudo nmcli con up br0`
+
+`sudo nmcli connection delete 'Wired connection 1'`
+
+`sudo nmcli con show`
+
+```
+NAME                UUID                                  TYPE      DEVICE 
+br0                 0877cdc2-4f10-4cdc-ac8d-fd4ed9d152e4  bridge    br0    
+lo                  611f8710-7e23-4d23-a486-e4767d126b8d  loopback  lo     
+bridge-slave-eth0   2202c9b7-0b24-4e7b-9e85-41e05eb2354a  ethernet  eth0  
 ```
 
 ### Создаем виртуалку

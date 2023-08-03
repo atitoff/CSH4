@@ -7,3 +7,6 @@ sudo apt-get autoremove -y --purge
 sudo apt-get install -y deborphan
 sudo deborphan | sudo xargs dpkg -P # do this a bunch of times
 ```
+
+Берем HAOS отсюда
+https://github.com/home-assistant/operating-system/releases

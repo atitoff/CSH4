@@ -7,11 +7,22 @@
 ![](WT32-ETH01.1.png)
 
 
-| Port | type                                                             |
-|------|------------------------------------------------------------------|
-| IO2  | GPIO2, ADC2_CH2, TOUCH2, RTC_GPIO12, HSPIWP, HS2_DATA0, SD_DATA0 |
-| IO4  | GPIO4, ADC2_CH0, TOUCH0, RTC_GPIO10, HSPIHD, HS2_DATA1, SD_DATA1, EMAC_TX_ER |
-| IO35 | GPI35, ADC1_CH7, RTC_GPIO5 |
+| Port | type                                                                              |
+|------|-----------------------------------------------------------------------------------|
+| IO2  | GPIO2, ADC2_CH2, TOUCH2, RTC_GPIO12, HSPIWP, HS2_DATA0, SD_DATA0                  |
+| IO4  | GPIO4, ADC2_CH0, TOUCH0, RTC_GPIO10, HSPIHD, HS2_DATA1, SD_DATA1, EMAC_TX_ER      |
+| IO35 | GPI35, ADC1_CH7, RTC_GPIO5                                                        |
+| IO12 | GPIO12, ADC2_CH5, TOUCH5, RTC_GPIO15, MTDI, HSPIQ, HS2_DATA2, SD_DATA2, EMAC_TXD3 |
+| IO14 | GPIO14, ADC2_CH6, TOUCH6, RTC_GPIO16, MTMS, HSPICLK, HS2_CLK, SD_CLK, EMAC_TXD2 |
+| IO15 |                                                                                   |
+| IO36 |                                                                                   |
+| IO39 |                                                                                   |
+| IO   |                                                                                   |
+| IO   |                                                                                   |
+
+
+
+
 
 
 Потребление 80 мА (0,27 Вт), потребление пиковое 500 мА (1,65 Вт).  

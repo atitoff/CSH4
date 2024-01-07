@@ -12,6 +12,7 @@
 * Протоколы взаимодействия
   * [MQTT](protocols/MQTT.pdf)
 * [HomeAssistant](ha/readme.md)
+* [ESPHome](esphome/readme.md)
 * [Zigbee](zigbee/readme.md)
 * [электропитание](power/readme.md)
 

@@ -4,18 +4,19 @@
 
 ![segment.svg](segment.svg)
 
-Шаблон кода дл модуля с ethernet может быть таким:
+
+Шаблон кода для модуля с ethernet может быть таким:
 ```yaml
 esphome:
-    name: wt32-0001
-    comment: Living room ESP32 controller
-    area: Living Room
+  name: wt32-0001
+  comment: Living room ESP32 controller
+  area: Living Room
 
 esp32:
-    board: esp-wrover-kit
-    framework:
-      type: arduino
-      version: latest
+  board: esp-wrover-kit
+  framework:
+    type: arduino
+    version: latest
 
 ethernet:
   type: LAN8720

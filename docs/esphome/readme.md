@@ -37,3 +37,19 @@ api:
 ota:
   password: "ase2e12qq"
 ```
+
+Работаем с MQTT
+
+```yaml
+mqtt:
+  id: mqtt_client
+  broker: 192.168.1.194
+  username: mqtt
+  password: bh0020
+  on_connect:
+    then:
+      - delay: 2s
+      - lambda: |-
+          ESP_LOGD("mqtt", "Connected to MQTT $devicename");
+          id(mqtt_client).publish("$devicename/the/topic", "The Payload");
+```

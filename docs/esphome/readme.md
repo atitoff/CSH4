@@ -9,7 +9,9 @@
 <details><summary>ESP-32S</summary>
 
 Самый недорогой модуль, несколько устаревший, но вполне работоспособный.
+
 ![esp-32s.png](esp-32s.png)
+
 [ESP32.pdf](ESP32.pdf)
 
 </details>

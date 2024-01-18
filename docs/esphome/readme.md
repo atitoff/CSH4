@@ -1,5 +1,19 @@
 # ESPHome
 
+## Hardware
+
+[Список процессоров и модулей ESP32](https://www.espressif.com/en/products/socs/)
+
+### ESP-32S
+
+<details><summary>ESP-32S</summary>
+
+Самый недорогой модуль, несколько устаревший, но вполне работоспособный.
+![esp-32s.png](esp-32s.png)
+[ESP32.pdf](ESP32.pdf)
+
+</details>
+
 ## Сегмент
 
 ![segment.svg](segment.svg)

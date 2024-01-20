@@ -12,14 +12,13 @@
 
 Лучше всего применить LiFePO4 аккумуляторы.
 
-|                                 |                                                | 14s  | 15s  | на ячейку |
-|---------------------------------|------------------------------------------------|------|------|-----------|
-| Recovery Charging Voltage       | Напряжение восстановления заряда               | 47,6 | 51   | 3,4       |
-| Constant Charging Voltage       | Постоянное напряжение зарядки (буферный режим) | 50,4 | 54   | 3,6       |
-| Low Voltage Disconnection       | Отключение при низком напряжении               | 39,2 | 42   | 2,8       |
-| Low Voltage Reconnection        | Повторное подключение                          | 44,8 | 48   | 3,2       |
-| Load Over-Voltage Disconnection | Отключение от перенапряжения нагрузки          | 51,8 | 55,5 | 3,7       |
-| Load Over-Voltage Re-connection | Повторное подключение перенапряжения нагрузки  | 50,4 | 54   | 3,6       |
+|                                 | 14s  | 15s  | На элемент |
+|---------------------------------|------|------|------------|
+| Boost charging voltage          | 47,6 | 51   | 3,4        |
+| Float charging voltage          | 44,8 | 48   | 3,2        |
+| Low DC cut-off recovery voltage | 40,6 | 43,5 | 2,9        |
+| Low DC cut-off voltage          | 39,2 | 42   | 2,8        |
+
 
 Батарея из 14 элементов 6 Ач (ценой 3500 р), продержится при нагрузке в 100 Вт не менее 2,5 часов,  
 при диапазоне выходного напряжения 3,4..2,8 В или 47,6..39,2  
@@ -30,6 +29,8 @@
 ![](discharge_lifepo4.png)
 
 Циклы зарядки на примере PowMr контроллера
+
+[Pstar_30-60-80A_Charge_Controller_User_manual.pdf](Pstar_30-60-80A_Charge_Controller_User_manual.pdf)
 
 ![30a-pwm-solar-charge-controller-1.png](30a-pwm-solar-charge-controller-1.png)
 

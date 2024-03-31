@@ -21,7 +21,8 @@
 ![segment.svg](segment.svg)
 
 
-Шаблон кода для модуля с ethernet может быть таким:
+<details><summary>Шаблон кода для модуля с ethernet может быть таким:</summary>
+
 ```yaml
 substitutions:
   devicename: wt32-0001
@@ -59,7 +60,11 @@ ota:
   password: "ase2e12qq"
 ```
 
-Работаем с MQTT
+</details>
+
+
+
+<details><summary>Работаем с MQTT</summary>
 
 ```yaml
 mqtt:
@@ -74,3 +79,27 @@ mqtt:
           ESP_LOGD("mqtt", "Connected to MQTT $devicename");
           id(mqtt_client).publish("$devicename/the/topic", "The Payload");
 ```
+
+</details>
+
+
+
+<details><summary>WiFi по умолчанию отключен</summary>
+
+```yaml
+wifi:
+  enable_on_boot: false
+
+api:
+  reboot_timeout: 0s
+
+on_...:
+  then:
+    - wifi.disable:
+
+on_...:
+  then:
+    - wifi.enable:
+```
+
+</details>

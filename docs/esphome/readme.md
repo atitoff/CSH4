@@ -103,3 +103,42 @@ on_...:
 ```
 
 </details>
+
+
+
+<details><summary>Субмодули общаются по CAN</summary>
+
+```yaml
+substitutions:
+  module_id: 1  # номер модуля на CAN шине от 0 до 15
+
+esphome:
+  name: module
+  name_add_mac_suffix: true
+
+wifi:
+  enable_on_boot: false
+
+api:
+  reboot_timeout: 0s
+
+on_...:
+  then:
+    - wifi.disable:
+
+on_...:
+  then:
+    - wifi.enable:
+
+canbus:
+  - platform: ...
+    can_id: $module_id
+    bit_rate: 25KBPS
+    on_frame:
+    - can_id: 16
+      use_extended_id: false
+      then:
+      - lambda: |-
+```
+
+</details>

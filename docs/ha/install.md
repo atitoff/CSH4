@@ -130,6 +130,11 @@ sudo virt-install --import --name hassos \
 --boot uefi
 ```
 
+```
+sudo virt-install --arch aarch64 --name hassos --memory 2048 --vcpus 2 --disk haos_generic-aarch64-12.1.qcow2,format=qcow2,bus=virtio --network bridge=br0,model=virtio --graphics none --noautoconsole --boot uefi
+```
+
+
 ## Cockpit
 This installs  that can be accessed via hostIP:9090 and installs the virtual machine manager.
 ```

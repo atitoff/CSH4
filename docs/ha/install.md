@@ -172,3 +172,45 @@ sudo virsh edit hassos
 
 </channel>
 Добавляется он в секцию “Device”, после чего нужно сохранить конфигурацию и выполнить ребут машины.
+
+
+## Установка на ROCK PI Debian
+
+### Удаляем X11
+
+```bash
+apt-get update
+apt-get purge libx11.* libqt.*
+apt purge libwayland-client0
+apt-get remove -y --purge x11-common
+apt-get autoremove -y --purge
+apt-get install -y deborphan
+deborphan | xargs dpkg -P # do this a bunch of times
+```
+
+### Настройка сети
+`sudo nmcli connection show`
+`sudo nmcli connection add con-name "static" ifname eth0 autoconnect no type ethernet ip4 192.168.1.80 gw4 192.168.1.1`
+`sudo nmcli conn modify "static" ipv4.dns 192.168.1.1`
+`sudo nmcli connection up "static"`
+
+`sudo nmcli connection delete 'Wired connection 1'`
+
+### Удаляем Network-manager
+
+`sudo nano /etc/network/interfaces`
+
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+  address 192.168.1.80
+  netmask 255.255.255.0
+  network 192.168.1.0
+  broadcast 192.168.1.255
+  gateway 192.168.1.1
+  dns-nameservers 192.168.1.1
+```
+

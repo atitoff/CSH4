@@ -23,6 +23,11 @@
 
 ![](discharge_lifepo4.png)
 
+Заряд
+
+![Screenshot_1](https://github.com/user-attachments/assets/094452f1-3d8b-4bd3-89ce-ea4bfb8c7c12)
+
+
 Циклы зарядки на примере PowMr контроллера
 
 [Pstar_30-60-80A_Charge_Controller_User_manual.pdf](Pstar_30-60-80A_Charge_Controller_User_manual.pdf)

@@ -23,6 +23,11 @@
 
 ![](discharge_lifepo4.png)
 
+Заряд
+
+![Screenshot_1](https://github.com/user-attachments/assets/094452f1-3d8b-4bd3-89ce-ea4bfb8c7c12)
+
+
 Циклы зарядки на примере PowMr контроллера
 
 [Pstar_30-60-80A_Charge_Controller_User_manual.pdf](Pstar_30-60-80A_Charge_Controller_User_manual.pdf)
@@ -54,3 +59,9 @@
 поддерживать полный заряд аккумулятора.
 На этапе плавающей зарядки нагрузки могут получать почти всю мощность от солнечной панели. Если нагрузка превышает мощность, контроллер больше не сможет поддерживать напряжение батареи на этапе плавающей зарядки. Если
 напряжение аккумулятора остается ниже напряжения перезарядки, система выйдет из этапа плавающей зарядки и вернется к этапу массовой зарядки.
+
+## BMS
+JBD BMS может интергрироваться с [ESPHome](https://github.com/syssi/esphome-jbd-bms/blob/main/docs/beginners-guide.md)
+
+![jbd](https://github.com/user-attachments/assets/11f2eca4-bb7d-47bc-aaab-cdc13fe71b86)
+

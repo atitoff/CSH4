@@ -10,6 +10,8 @@
 <img src="pic/1.png" width="400">
 <img src="pic/2.png" width="400">
 <img src="pic/3.png" width="400">
+Фиксируется защелкой
+<img src="pic/4.png" width="400">
 
 ![](eth_module.svg)
 

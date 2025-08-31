@@ -7,10 +7,9 @@
 
 Места для модулей есть однопортовые, есть двухпортовые, но везде есть I2C
 
-![1.png](pic/1.png | width=300)
-<img src="pic/1.png" width="100">
-![2.png](pic/2.png)
-![3.png](pic/3.png)
+<img src="pic/1.png" width="400">
+<img src="pic/2.png" width="400">
+<img src="pic/3.png" width="400">
 
 ![](eth_module.svg)
 

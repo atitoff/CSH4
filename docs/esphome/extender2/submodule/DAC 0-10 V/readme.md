@@ -8,4 +8,4 @@
 
 Распиновка STM32
 
-![stm32.png](stm32.png)
+<img src="stm32.png" width="400">

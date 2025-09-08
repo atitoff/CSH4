@@ -11,4 +11,4 @@
 
 Первый два способа предпочтительны.
 
-![can_variants.svg](can_variants.svg)
+![](can_variants.svg)

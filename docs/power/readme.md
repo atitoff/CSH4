@@ -27,10 +27,13 @@
 
 ![Screenshot_1](https://github.com/user-attachments/assets/094452f1-3d8b-4bd3-89ce-ea4bfb8c7c12)
 
+[Пример расчета для 24 В питания](24v.md)
 
 Циклы зарядки на примере PowMr контроллера
 
-[Pstar_30-60-80A_Charge_Controller_User_manual.pdf](Pstar_30-60-80A_Charge_Controller_User_manual.pdf)
+[Pstar_30-60-80A_Charge_Controller_User_manual.pdf](Pstar_30-60-80A_Charge_Controller_User_manual.pdf)  
+новее  
+[Pstar_30-60-80_User_manual_V1.3.1112.pdf](Pstar_30-60-80_User_manual_V1.3.1112.pdf)
 
 ![30a-pwm-solar-charge-controller-1.png](30a-pwm-solar-charge-controller-1.png)
 

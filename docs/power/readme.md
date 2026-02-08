@@ -23,6 +23,10 @@
 
 ![](discharge_lifepo4.png)
 
+## Вариант для 24 В
+
+![](24v_solar.svg)
+
 Заряд
 
 ![Screenshot_1](https://github.com/user-attachments/assets/094452f1-3d8b-4bd3-89ce-ea4bfb8c7c12)

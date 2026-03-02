@@ -2,7 +2,7 @@
 
 ## Hardware
 
-[Список процессоров и модулей ESP32](https://www.espressif.com/en/products/socs/)
+[Список процессоров и модулей ESP32](https://products.espressif.com/#/product-comparison?type=SoC&names=)
 
 ### ESP-32S
 
@@ -16,10 +16,11 @@
 
 </details>
 
-## Сегмент
+### ESP-32-C5
 
-![segment.svg](segment.svg)
+Новый чип с поддержкой WiFi6 и ZigBee
 
+## Примеры кода
 
 <details><summary>Шаблон кода для модуля с ethernet может быть таким:</summary>
 

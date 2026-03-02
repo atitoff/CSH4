@@ -22,7 +22,6 @@
 
 ## Примеры кода
 
-<details><summary>Шаблон кода для модуля с ethernet может быть таким:</summary>
 
 ```yaml
 substitutions:
@@ -60,6 +59,11 @@ api:
 ota:
   password: "ase2e12qq"
 ```
+
+
+<details><summary>Шаблон кода для модуля с ethernet может быть таким:</summary>
+
+
 
 </details>
 

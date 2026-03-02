@@ -71,6 +71,16 @@ code block
 </details>
 
 
+## A collapsible section with markdown
+<details>
+  <summary>Click to expand!</summary>
+  
+```python
+def func():
+    return 'hello, world!'
+```
+</details>
+
 
 <details><summary>Работаем с MQTT</summary>
 

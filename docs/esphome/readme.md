@@ -22,6 +22,26 @@
 [даташит](https://documentation.espressif.com/esp32-c5-wroom-1_wroom-1u_datasheet_en.html)  
 [описание портов](https://documentation.espressif.com/esp32-c5-wroom-1_wroom-1u_datasheet_en.html#[12,%22XYZ%22,56.69,785.2,null])
 
+
+## Субмодули
+
+<details><summary>4 DAC (I2C)</summary>
+
+Модуль аналогового выхода, в зависимости от компонентов может быть 0..10 В или менее,
+может быть гальваноразвязанным.
+
+Цоколевка:
+1. DAC1
+2. DAC2
+3. DAC3
+4. DAC4
+5. GND
+6. +12..15 В
+
+</details>
+
+
+
 ## Примеры кода
 
 

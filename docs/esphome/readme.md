@@ -18,10 +18,14 @@
 
 ### ESP-32-C5
 
-Новый чип с поддержкой WiFi6 и ZigBee
+Новый чип с поддержкой WiFi6 и ZigBee  
+[даташит](https://documentation.espressif.com/esp32-c5-wroom-1_wroom-1u_datasheet_en.html)  
+[описание портов](https://documentation.espressif.com/esp32-c5-wroom-1_wroom-1u_datasheet_en.html#[12,%22XYZ%22,56.69,785.2,null])
 
 ## Примеры кода
 
+
+<details><summary>Шаблон кода для модуля с ethernet может быть таким:</summary>
 
 ```yaml
 substitutions:
@@ -60,27 +64,8 @@ ota:
   password: "ase2e12qq"
 ```
 
-
-<details><summary>Шаблон кода для модуля с ethernet может быть таким:</summary>
-
-## *formatted* **heading** with [a](link)
-```java
-code block
-```
-
 </details>
 
-## A collapsible section with markdown
-<details><summary>
-
-Click to expand!</summary>
-  
-```python
-def func():
-    return 'hello, world!'
-```
-
-</details>
 
 
 <details><summary>Работаем с MQTT</summary>

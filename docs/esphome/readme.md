@@ -63,7 +63,10 @@ ota:
 
 <details><summary>Шаблон кода для модуля с ethernet может быть таким:</summary>
 
-
+## *formatted* **heading** with [a](link)
+```java
+code block
+```
 
 </details>
 

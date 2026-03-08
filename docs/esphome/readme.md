@@ -41,6 +41,20 @@
 </details>
 
 
+<details><summary>Оптоизолированный ключ с поддержкой PWM</summary>
+
+![mosfet_switch.png](pic/mosfet_switch.png)
+
+Цоколевка:
+1. DAC1
+2. DAC2
+3. DAC3
+4. DAC4
+5. GND
+6. +12..15 В
+
+</details>
+
 
 ## Примеры кода
 

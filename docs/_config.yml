@@ -5,3 +5,6 @@ commonmark:
   extensions: ["strikethrough", "autolink", "table", "tagfilter"]
 plugins:
 - jekyll-remote-theme
+
+minima:
+  skin: classic

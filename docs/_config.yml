@@ -1,4 +1,5 @@
-site_theme: light
+meta_name:
+  color-scheme: 'light'
 markdown: CommonMarkGhPages
 commonmark:
   options: ["UNSAFE", "SMART", "FOOTNOTES"]

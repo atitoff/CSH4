@@ -22,6 +22,12 @@
 [даташит](https://documentation.espressif.com/esp32-c5-wroom-1_wroom-1u_datasheet_en.html)  
 [описание портов](https://documentation.espressif.com/esp32-c5-wroom-1_wroom-1u_datasheet_en.html#[12,%22XYZ%22,56.69,785.2,null])
 
+<details><summary>Порты</summary>
+
+![c5-pins.png](pic/c5-pins.png)
+
+</details>
+
 
 ## Субмодули
 

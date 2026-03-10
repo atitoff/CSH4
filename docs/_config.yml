@@ -1,5 +1,7 @@
-theme: jekyll-theme-slate
+remote_theme: "jekyll/minima@1e8a445"
 markdown: CommonMarkGhPages
 commonmark:
   options: ["UNSAFE", "SMART", "FOOTNOTES"]
   extensions: ["strikethrough", "autolink", "table", "tagfilter"]
+plugins:
+- jekyll-remote-theme

@@ -37,18 +37,24 @@
 
 ## Субмодули
 
-<details><summary>4 DAC (I2C)</summary>
+<details><summary>8 DAC (I2C)</summary>
 
 Модуль аналогового выхода, в зависимости от компонентов может быть 0..10 В или менее,
 может быть гальваноразвязанным.
+
+![](pic/8DAC.svg)
 
 Цоколевка:
 1. DAC1
 2. DAC2
 3. DAC3
 4. DAC4
-5. GND
-6. +12..15 В
+5. DAC5
+6. DAC6
+7. DAC7
+8. DAC8
+9. GND
+10. +12..15 В
 
 </details>
 
@@ -70,6 +76,39 @@
 
 ## Примеры кода
 
+<details><summary>Поддержка двух CAN шин</summary>
+
+```yaml
+canbus:
+
+# inverter
+  - platform: esp32_can
+    id: inverter
+    tx_pin: GPIO03
+    rx_pin: GPIO02
+    can_id: 100
+    bit_rate: 500KBPS
+    on_frame:
+    - can_id: 0x305
+      then:
+        - lambda: |-
+            ESP_LOGI("main", "received can id: 0x305 ACK");
+
+# BMS
+  - platform: esp32_can
+    id: bms
+    tx_pin: GPIO00
+    rx_pin: GPIO01
+    can_id: 200
+    bit_rate: 500KBPS
+    on_frame:
+    - can_id: 0x35E
+      then:
+        - lambda: |-
+            ESP_LOGI("canid 0x35e:", "%02x %02x %02x %02x %02x %02x %02x %02x", x[0], x[1], x[2], x[3], x[4], x[5], x[6], x[7]); 
+```
+
+</details>
 
 <details><summary>Шаблон кода для модуля с ethernet может быть таким:</summary>
 

@@ -28,6 +28,16 @@
 
 </details>
 
+### ESP-32-C3
+
+Дешевый микромодуль для распайки на субмодули
+
+<details><summary>Выводы</summary>
+
+![esp32_supermini_pin.png](pic/esp32_supermini_pin.png)
+
+</details>
+
 ## Модули
 
 ![](pic/modules.svg)

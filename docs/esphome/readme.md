@@ -38,6 +38,13 @@
 
 </details>
 
+### Готовые платы с поддержкой Ethernet
+
+[KC868-A16](modules/kc868-a16/readme.md)
+
+[WT32-ETH01](modules/WT32-ETH01/readme.md)
+
+
 ### Модули
 
 ![](pic/modules.svg)

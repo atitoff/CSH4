@@ -54,41 +54,7 @@
 
 ### Субмодули
 
-<details><summary>8 DAC (I2C)</summary>
-
-Модуль аналогового выхода, в зависимости от компонентов может быть 0..10 В или менее,
-может быть гальваноразвязанным.
-
-![](pic/8DAC.svg)
-
-Цоколевка:
-1. DAC1
-2. DAC2
-3. DAC3
-4. DAC4
-5. DAC5
-6. DAC6
-7. DAC7
-8. DAC8
-9. GND
-10. +12..15 В
-
-</details>
-
-
-<details><summary>Оптоизолированный ключ с поддержкой PWM</summary>
-
-![mosfet_switch.png](pic/mosfet_switch.png)
-
-Цоколевка:
-1. DAC1
-2. DAC2
-3. DAC3
-4. DAC4
-5. GND
-6. +12..15 В
-
-</details>
+[Субмодуль 1](modules/submodule1/readme.md)
 
 ## Примеры кода
 

@@ -36,6 +36,8 @@
 
 ![esp32_supermini_pin.png](pic/esp32_supermini_pin.png)
 
+![c3-gpio.png](pic/c3-gpio.png)
+
 </details>
 
 ### Готовые платы с поддержкой Ethernet

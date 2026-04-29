@@ -40,6 +40,9 @@
 
 </details>
 
+
+### [ESP32-C6 SuperMini](modules/esp32-c6-super-mini/readme.md)
+
 ### Готовые платы с поддержкой Ethernet
 
 [KC868-A16](modules/kc868-a16/readme.md)
